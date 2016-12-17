@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "app_function": "food-coop.app",
+        "s3_bucket": "zappa-mkerrig",
+        "manage_roles": false,
+        "role_name": "ZappaRole",
+    }
+}
