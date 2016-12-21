@@ -15,6 +15,14 @@ app = start_app()
 @app.route('/')
 def index():
     return render_template('basic.html')
+"""
+All you have to do to render a new page/route for flask is copy and paste, and
+then fill in for the following:
+
+@app.route('/<INSERT URL SUFFIX HERE>')
+def index():
+    return render_template('<FILENAME THAT IS IN templates/ HERE>')
+"""
 
 # We only need this for local development.
 if __name__ == '__main__':
