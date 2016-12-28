@@ -4,5 +4,6 @@
         "s3_bucket": "zappa-mkerrig",
         "manage_roles": false,
         "role_name": "ZappaRole",
+        "cors": true,
     }
 }

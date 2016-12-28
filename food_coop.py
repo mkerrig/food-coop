@@ -14,7 +14,7 @@ app = start_app()
 
 @app.route('/')
 def index():
-    return render_template('basic.html')
+    return render_template('index.html')
 """
 All you have to do to render a new page/route for flask is copy and paste, and
 then fill in for the following:
