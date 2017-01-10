@@ -33,3 +33,21 @@ Live site is up at: https://jqb7m64ze7.execute-api.us-east-1.amazonaws.com/dev
 Nothing there really right now, awaiting your guy's changes
 
 Flask's HTML supports jinja2 http://jinja.pocoo.org/docs/dev/
+
+
+
+************
+
+Style Guide:
+Original Blue: #45aed6
+
+New Deep Green: #488f0d
+Accent Bright Green: #66cf34
+New Golden Yellow: #fccc06
+
+Collection -> https://unsplash.com/collections/483597/food-really-local
+Basket - https://unsplash.com/photos/ZKNsVqbRSPE
+Peppers - https://unsplash.com/photos/vYMRkFYQq-M
+Spices - https://unsplash.com/photos/M3M7D7LZ_n0
+Tomato - https://unsplash.com/photos/zdunBSAi3P0
+Strawberry - https://unsplash.com/photos/BchYMYL9UKQ
