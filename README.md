@@ -20,21 +20,24 @@
 
 ### 4. Run `pip install -r requirements.txt`
 
-### 5. Change the necessary HTML and other static files in `templates/` and `static/`
+### Next step only if you're a dev
+
+### 5. Install  and configure AWS CLI
+  * Run `pip install awscli`
+  * Run `aws configure`
+  * Fill out the prompted info (ask mkerrig for info)
+
+### If you're not a dev, but want to change how the site looks:
+
+### 1. Change the necessary HTML and other static files in `templates/` and `static/`
   * Test the your local version of the site by running `python food_coop.py` then open http://127.0.0.1:5000/ in your browser
   * Put all new static files in static, otherwise uploads won't work
   * To upload static files to our S3 bucket that you are referring to in the HTML run `python upload_static_resources.py`
   * Make the source links in the following format: static/INSERT-FILENAME-HERE
 
-### 6. Make a pull request to this repo so I can upload your changes to the live site
+### 2. Make a pull request to this repo so I can upload your changes to the live site
 
-Live site is up at: https://jqb7m64ze7.execute-api.us-east-1.amazonaws.com/dev
-
-Nothing there really right now, awaiting your guy's changes
-
-Flask's HTML supports jinja2 http://jinja.pocoo.org/docs/dev/
-
-
+Live site is up at: https://www.bestfoodforward.org/
 
 ************
 
