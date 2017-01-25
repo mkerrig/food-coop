@@ -16,7 +16,7 @@
   * Open up a terminal and run `pip install virtualenv`
   * Then use the `cd` command to change into the directory that you just cloned the repo into
   * Then run `virtualenv --no-site-packages venv`
-  * Then run `source venv/bin/activate` or I believe `source venv\bin\activate` on Windows
+  * Then run `source venv/bin/activate` or `source venv/Scripts/activate` on Windows
 
 ### 4. Run `pip install -r requirements.txt`
 
