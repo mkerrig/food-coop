@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
 /*
 Template Name: Multi
 Version: 1.0
@@ -38,6 +38,9 @@ a:focus {
   text-decoration: none;
   color: #2a95be;
 }
+
+
+
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
@@ -166,6 +169,12 @@ ul.nostyle i {
   height: auto;
   padding: 22px 15px 21px;
 }
+
+.navbar-logo{
+	max-width: 170px;
+	margin-left: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
     background: rgba(255, 255, 255, 0.9);
@@ -788,6 +797,15 @@ ul.nostyle i {
 #get-in-touch h2 {
   color: #fff;
 }
+#get-in-touch a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#get-in-touch a:hover {
+  font-weight: bold;
+}
+
 #blog {
   padding: 100px 0;
 }
