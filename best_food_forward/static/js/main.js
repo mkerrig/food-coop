@@ -197,22 +197,22 @@ jQuery(function($) {'use strict';
 	form.submit(function(event){
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
-
 		var data = {
 		name: $("#form_name").val(),
 		subject: $("#form_subject").val(),
 		email: $("#form_email").val(),
 		message: $("#form_message").val()
+
 };
 		$.ajax({
-			url: 'static/php/email.php',
-			type: 'POST'
+			url: 'https://www.bestfoodforward.org/api/1/send',
+			type: 'POST',
 			data: data,
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Thank you for contacting us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
 		});
 	});
 

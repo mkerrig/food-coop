@@ -3,6 +3,8 @@ from flask_s3 import FlaskS3
 from flask import request
 import boto3
 import time
+import smtplib
+
 dynamodb = boto3.resource('dynamodb')
 table =  dynamodb.Table('Users')
 
@@ -38,6 +40,27 @@ def add_user():
         return 'Account could not be created, error: {}'.format(e), 404
     return 'Account created succesfully!'
 
+@app.route('/api/1/send', methods=['POST'])
+def send_email():
+    name = request.form['name']
+    email = request.form['email']
+    subject = request.form['subject']
+    message = request.form['message']
+    email_message = 'Name: {}\nEmail: {}\nMessage:\n{}'.format(name, email, message)
+    fromaddr = 'bestfoodfwd@gmail.com'
+    toaddrs  = 'matt@networkinguys.com'
+    username = 'bestfoodfwd@gmail.com'
+    password = 'bestfoodforward'
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.ehlo()
+    server.starttls()
+    server.login(username,password)
+    server.sendmail(fromaddr, toaddrs, email_message)
+    server.quit()
+    return '',200
+
+if __name__ == "__main__":
+    app.run()
 
 # We only need this for local development.
 if __name__ == '__main__':
