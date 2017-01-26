@@ -48,7 +48,7 @@ def send_email():
     message = request.form['message']
     email_message = 'Name: {}\nEmail: {}\nMessage:\n{}'.format(name, email, message)
     fromaddr = 'bestfoodfwd@gmail.com'
-    toaddrs  = 'matt@networkinguys.com'
+    toaddrs  = 'bestfoodforward@osu.edu'
     username = 'bestfoodfwd@gmail.com'
     password = 'bestfoodforward'
     server = smtplib.SMTP('smtp.gmail.com:587')
